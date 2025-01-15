@@ -2,6 +2,19 @@ using Newtonsoft.Json;
 
 namespace Loyal.EllKay.App;
 
+// {
+//     "physicianId": "string",
+//     "facilityId": "string",
+//     "startTime": "2025-01-15T16:37:12.257Z",
+//     "duration": "string",
+//     "slotId": "string",
+//     "type": "string",
+//     "resources": [
+//     {
+//         "id": "string"
+//     }
+//     ]
+// }
 public class AppointmentSlot
 {
     [JsonProperty("physician_id")]
