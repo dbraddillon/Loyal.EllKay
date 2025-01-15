@@ -4,6 +4,9 @@ using RestSharp;
 
 //https://github.com/dbraddillon/Loyal.EllKay Share or move to Loyal...
 
+//appointment DL service 
+//https://github.com/loyalhealth/EHRApi/blob/c121855f596d9b390179804b49e5d0b9c0a88498/IntegrationTests/EHRApi.Appointment.WebApi.IntegrationTests/Controllers/AppointmentControllerTests.cs#L33
+
 const string baseUrl = "https://services.lkstaging.com";
 //const string baseUrl = "https://services.lkcloud.com";
 
