@@ -3,10 +3,9 @@ using Newtonsoft.Json;
 
 namespace Loyal.EllKay.App;
 
-public class GetAppointmentSlotsRequest : RequestBase
+public class GetAppointmentSlotsRequest
 {
     public GetAppointmentSlotsRequest()
-    :base()
     {
         Request = new GetAppointmentSlots();
     }
@@ -26,19 +25,19 @@ public class GetAppointmentSlots
     public DateTimeOffset EndDate { get; set; }//2019-01-01T00:00:00+00:00
     
     [JsonProperty("facilityIds", DefaultValueHandling = DefaultValueHandling.Ignore)]
-    public string[] FacilityIds { get; set; }
+    public string[]? FacilityIds { get; set; }
     
     [JsonProperty("physicianIds", DefaultValueHandling = DefaultValueHandling.Ignore)]
-    public string[] PhysicianIds    { get; set; }   
+    public string[]? PhysicianIds    { get; set; }   
     
     [JsonProperty("appointmentValues", DefaultValueHandling = DefaultValueHandling.Ignore)]
-    public string[] AppointmentTypes { get; set; }
+    public string[]? AppointmentTypes { get; set; }
     
     [JsonProperty("resources", DefaultValueHandling = DefaultValueHandling.Ignore)]
-    public Resource[] Resources { get; set; }
+    public Resource[]? Resources { get; set; }
 }
 
 public class Resource
 {
-    public string Id { get; set; }
+    public string? Id { get; set; }
 }

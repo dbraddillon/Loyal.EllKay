@@ -2,10 +2,10 @@ namespace Loyal.EllKay.App;
 
 public class Config
 {
-    public string EllKayClientId { get; set; }
-    public string EllKayClientSecret { get; set; }
+    public string? EllKayClientId { get; set; }
+    public string? EllKayClientSecret { get; set; }
     
-    public string EllKaySiteServiceKey { get; set; }
+    public string? EllKaySiteServiceKey { get; set; }
 
     public static Config BindFromEnvironment()
     {
